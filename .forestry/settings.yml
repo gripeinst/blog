@@ -10,17 +10,17 @@ sections:
   path: content/post
   label: Post
 - type: directory
-  path: content/post
-  label: Post
-  create: documents
-  match: "**/*"
-- type: directory
   path: content
   label: Pages
   create: all
   match: "*"
 - type: heading
   label: Configuration
+- type: directory
+  path: content/post
+  label: Post
+  create: documents
+  match: "**/*"
 - type: directory
   path: assets
   label: Assets
