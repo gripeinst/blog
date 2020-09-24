@@ -16,6 +16,11 @@ sections:
   match: "*"
 - type: heading
   label: Configuration
+- type: directory
+  path: assets/*
+  label: Assets
+  create: all
+  match: "**/*"
 - type: document
   path: config.toml
   label: Configuration
