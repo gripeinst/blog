@@ -6,9 +6,11 @@ webhook_url:
 sections:
 - type: heading
   label: Blog Post
-- type: document
+- type: directory
   path: content/post
   label: Post
+  create: documents
+  match: "**/*"
 - type: directory
   path: content
   label: Pages
@@ -17,12 +19,7 @@ sections:
 - type: heading
   label: Configuration
 - type: directory
-  path: content/post
-  label: Post
-  create: documents
-  match: "**/*"
-- type: directory
-  path: assets
+  path: ''
   label: Assets
   create: all
   match: "**/*"
