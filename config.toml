@@ -1,11 +1,11 @@
 baseURL = "https://gripeinst.netlify.app"
 title = "GripEinst Blog"
 theme = "hugo-notepadium"
-copyright = "©2019 Notepadium."
+copyright = "©2020 Notepadium."
 
-languageCode = "en-us"
+languageCode = "en"  # for the RSS generation
+defaultContentLanguage = "en"
 hasCJKLanguage = true
-
 enableRobotsTXT = true
 
 # Enable Disqus
@@ -23,11 +23,14 @@ unsafe = true  # enable raw HTML in Markdown
 
 [params]
 style = "auto"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
-logo = ""  # if you have a logo png
+dateFormat = "02 Jan, 2006"  # if unset, default is "2006-01-02"
+readingTime = false  # show reading time after article date
+logo = ""
 slogan = "100% JavaScript-free"
-license = ""  # CC License
-fullRss = false # Puts entire HTML post into rss 'description' tag. If unset, default is false.
+#license = "<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/><img alt=Creative Commons License style=border-width:0 src=https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png /></a><br />This work is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>."
+
+[params.assets]
+css = ["css/fonts.css"]
 
 [params.comments]
 enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
@@ -38,19 +41,27 @@ use = "katex"  # option: "katex", "mathjax". default: "katex"
 
 [params.syntax]
 use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "xcode"
-darkTheme = "xcode-dark"  # apply this theme in dark mode
+theme = "github"
+darkTheme = "dracula"
+
+[params.profile]
+  enable = true
+  avatar = "https://d33wubrfki0l68.cloudfront.net/ddf49425628d8aec7523db143916b34ae1641e11/b97e8/images/gopher-side_color.svg"
+  name = "gohugo"
+  bio = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."  # support markdown syntax
+  twitter = "GoHugoIO"  # https://twitter.com/XXX
+  github = "gohugoio"  # https://github.com/XXX
 
 [params.share]
 enable = false
 addThisId = ""
 inlineToolId = ""
 
+# custom navigation items
+
 [params.nav]
 showCategories = true       # /categories/
 showTags = true             # /tags/
-
-# custom navigation items
 
 [[params.nav.custom]]
 title = "About"
@@ -59,9 +70,3 @@ url = "/about"
 [[params.nav.custom]]
 title = "Hugo"
 url = "https://gohugo.io/"
-
-# for chinese
-[params.beian]
-  icp = ""     # example: 粤ICP备20056596号-1
-  gongan = ""  # example: 粤公网安备 44030502005645号
-  code = ""    # example: 44030502005645
