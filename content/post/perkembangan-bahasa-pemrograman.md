@@ -25,7 +25,7 @@ Pengembangan logika ini terus berkembang dari tahun ke tahun hingga seorang ilmu
 
 Ketika sedang mengembangkan Z-4, Zuse sadar bahwa bahasa pemrograman dengan bahasa mesin terlalu rumit. Bahasa mesin ini tergolong bahasa tingkat rendah, karena hanya kumpulan kode 0 dan 1, atau ya dan tidak. Setelah melakukan penelitian selama setahun, pada tahun 1945 barulah tercipta bahasa pemrograman tingkat tinggi pertama didunia, yaitu Plankalkul (Plan Kalkulus). Dengan Plankalkul terbukti bisa meciptakan mesin catur komputer pertama didunia.
 
-\[^1\]: Sumber : 
+Sumber :
 
 [https://id.wikipedia.org/wiki/Bahasa_pemrograman](https://id.wikipedia.org/wiki/Bahasa_pemrograman "https://id.wikipedia.org/wiki/Bahasa_pemrograman")
 
