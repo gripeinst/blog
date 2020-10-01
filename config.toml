@@ -14,8 +14,8 @@ noClasses = false
 [params]
 dateFormat = "02 Jan, 2006"
 logo = ""
-readingTime = false
-slogan = "100% JavaScript-free"
+readingTime = true
+slogan = "JavaScript-free Blog"
 style = "auto"
 [params.assets]
 css = ["css/fonts.css"]
