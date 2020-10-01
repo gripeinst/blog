@@ -27,5 +27,6 @@ fields:
   name: aliases
   label: aliases
 pages:
+- content/post/bluetooth.md
 - content/post/komponen-komputer-dan-fungsinya.md
 - content/post/perkembangan-bahasa-pemrograman.md
